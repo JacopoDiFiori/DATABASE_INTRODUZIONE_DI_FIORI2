@@ -1,0 +1,123 @@
+/* settaggi iniziali */
+:root{
+    --main: eae2b7;
+    --sec: #03071ea7;
+    --acc: #0a0903;
+    --green-dark: #ec7d10;
+    --green-light: #003049;
+    --dark: rgb(20, 20, 20);
+    --light: rgb(245, 245, 245);
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+.h1, h1 {
+    font-family: "Electrolize", sans-serif;
+}
+
+body{
+    background-color: var(--light);
+}
+/* fine settaggi iniziali  */
+
+/* navbar style */
+.bg-navbar{
+    background-color: var(--green-dark);
+}
+
+.navbar{transition: 3s ;}
+
+#logo{
+    height: 70px;
+    transition: 3s ;
+}
+
+.nav-link{
+    color: var(--sec);
+    border: 2px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link:focus{color: var(--acc);
+border-bottom: 2px solid var(--acc);
+}
+
+.navbar-toggler {
+    border: var(--bs-border-width) solid var(--green-dark);
+
+}
+#menubutton{
+    color: var(--green-dark);
+}
+
+
+.container-navbar{
+    position: relative;
+    margin-top: 30px;
+    padding: 0 3rem;
+    transition: 0.4s;
+    z-index: 2;
+}
+
+.container-navbar.sticky-top{
+position: sticky;
+top: 0;
+padding: 0;
+z-index: 2;
+}
+/* fine navbar style */
+
+/* inizio header style */
+h1{
+    font-size: 4rem;
+}
+
+.bg-button{
+    background-color: var(--green-light);
+    color: var(--green-dark);
+    border: 1px solid var(--green-dark);
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    transition: 0.5s;
+}
+
+.bg-button:hover{
+    background-color: var(--green-dark);
+    color: var(--green-light);
+    border: 1px solid var(--green-light);
+}
+
+#Cartoleria-img{min-height: 650px;}
+
+
+
+/* fine header style */
+
+/* inizio sezione numbers */
+.number{
+    font-size: 30px;
+    color: var(--sec);
+    font-weight: 2000px;
+}
+
+
+/* fine sezione numbers */
+
+
+/* animazioni */
+.fadeRight{
+    animation: fadeRight 1s;
+}
+
+@keyframes fadeRight{
+0%{opacity:0;
+    transform: translateX(-200px);
+}
+100%{
+    opacity: 1;
+    transform: translateX(0px);
+}
+}
+
